@@ -15,10 +15,15 @@ h2{
     justify-content: center;
     align-items: center;
     gap: 20px;
-    background-color: #F2F2F2;
+    background-color: rgb(210, 215, 216);
     width: 100%;
     margin-top: 15px;
     font-size: 20px;
+}
+.font{
+    background-color: #F2F2F2;
+    padding-top: 10px;
+    padding-bottom: 60px;
 }
 .titre h1{
     text-align: center;
@@ -29,17 +34,17 @@ h2{
     font-size: 20px;
 }
 .fonc{
-    padding-top: 80px;
+    padding-top: 40px;
 }
 .btn_1{
     display: inline-flex;
     border-radius: 50px;
-    background-color: #FF79DA;
     width: 60%;
     height: 50px;
     margin-left: 20%;
     color: white;
     margin-top: 15px;
+    background: linear-gradient(to bottom right, rgb(243, 170, 253), rgb(192, 83, 219));
         p{
         text-align: center;
         margin-left: 8%;
@@ -63,7 +68,7 @@ h2{
     align-items: center;
     gap: 30px;
     .rond {
-        background-color:rgb(168, 21, 168) ;
+        background-color:rgb(192, 83, 219) ;
         color: white ;
         padding: 6px;
         padding-left: 10px;
@@ -74,11 +79,20 @@ h2{
 }
 .nav2{
      @extend .nav1;
-    background-color: #FF79DA;
+    background-color: #e4d7f5;
+    i{
+    color: rgb(192, 83, 219) ;
+    }
 }
 .rest{
     margin-top: 50px;
     margin-bottom: -20px;
+    }
+    .nouveau{
+        position: absolute;
+        background-color: greenyellow;
+        width: 80px;
+        right: 40px;
     }
 .cards{
     display: inline-flex;
@@ -88,6 +102,7 @@ h2{
     border-radius: 30px;
     width: 90%;
     margin-left: 5%;
+    margin-top: 20px;
         img {
         border-top-right-radius: 20px;border-top-left-radius: 20px;width: 100%;
         }
@@ -216,6 +231,10 @@ h2{
     flex-direction: column;
     width: 95%;
     gap: 50px;
+    h2{
+        border-bottom: rgb(61, 230, 215) solid;
+        width: 60px;
+    }
 
     }
     .part_3{
@@ -223,6 +242,10 @@ h2{
     flex-direction: column;
     width: 95%;
     gap: 50px;
+    h2{
+        border-bottom: rgb(61, 230, 215) solid;
+        width: 60px;
+    }
     }
     .bouton_2{
     background-color:#FF79DA ;
@@ -236,4 +259,5 @@ h2{
         p {
             margin-left: 30%;
         } 
+        
     }          

@@ -18,10 +18,16 @@ h2 {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  background-color: #F2F2F2;
+  background-color: #d2d7d8;
   width: 100%;
   margin-top: 15px;
   font-size: 20px;
+}
+
+.font {
+  background-color: #F2F2F2;
+  padding-top: 10px;
+  padding-bottom: 60px;
 }
 
 .titre h1 {
@@ -35,18 +41,18 @@ h2 {
 }
 
 .fonc {
-  padding-top: 80px;
+  padding-top: 40px;
 }
 
 .btn_1 {
   display: inline-flex;
   border-radius: 50px;
-  background-color: #FF79DA;
   width: 60%;
   height: 50px;
   margin-left: 20%;
   color: white;
   margin-top: 15px;
+  background: linear-gradient(to bottom right, #f3aafd, #c053db);
 }
 .btn_1 p {
   text-align: center;
@@ -73,7 +79,7 @@ h2 {
   gap: 30px;
 }
 .nav1 .rond, .nav2 .rond {
-  background-color: #a815a8;
+  background-color: #c053db;
   color: white;
   padding: 6px;
   padding-left: 10px;
@@ -83,12 +89,22 @@ h2 {
 }
 
 .nav2 {
-  background-color: #FF79DA;
+  background-color: #e4d7f5;
+}
+.nav2 i {
+  color: #c053db;
 }
 
 .rest {
   margin-top: 50px;
   margin-bottom: -20px;
+}
+
+.nouveau {
+  position: absolute;
+  background-color: greenyellow;
+  width: 80px;
+  right: 40px;
 }
 
 .cards {
@@ -99,6 +115,7 @@ h2 {
   border-radius: 30px;
   width: 90%;
   margin-left: 5%;
+  margin-top: 20px;
 }
 .cards img {
   border-top-right-radius: 20px;
@@ -245,12 +262,20 @@ h2 {
   width: 95%;
   gap: 50px;
 }
+.part_2 h2 {
+  border-bottom: #3de6d7 solid;
+  width: 60px;
+}
 
 .part_3 {
   display: inline-flex;
   flex-direction: column;
   width: 95%;
   gap: 50px;
+}
+.part_3 h2 {
+  border-bottom: #3de6d7 solid;
+  width: 60px;
 }
 
 .bouton_2 {
