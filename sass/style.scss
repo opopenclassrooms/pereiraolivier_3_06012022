@@ -37,7 +37,7 @@ h2{
     padding-top: 40px;
 }
 .btn_1{
-    display: inline-flex;
+    
     border-radius: 50px;
     width: 60%;
     height: 50px;
@@ -47,7 +47,8 @@ h2{
     background: linear-gradient(to bottom right, rgb(243, 170, 253), rgb(192, 83, 219));
         p{
         text-align: center;
-        margin-left: 8%;
+        padding-top: 15px;
+    
     }
 }
 .bloc_nav{
@@ -90,7 +91,7 @@ h2{
     }
     .nouveau{
         position: absolute;
-        background-color: greenyellow;
+        background-color: rgb(165, 248, 220);
         width: 80px;
         right: 40px;
     }
@@ -113,7 +114,8 @@ h2{
         .content {
         display: inline-flex;
         align-items: center;
-        width: 90%;
+        width: 100%;
+        gap: 20%;
         }
         .content1{
         flex-direction: column;
@@ -126,8 +128,17 @@ h2{
         margin-left: 5%;
         }
     }
-    .symb{
-    display: inline-flex;
+    .symb:hover{
+        margin-right: 5%;
+        
+    
+        .fas{
+            color: rgb(192, 83, 219);
+
+        }
+        .far{
+            display:none
+        }
     }
     .resto{
     display: inline-flex;
@@ -144,7 +155,7 @@ h2{
     background-color: #303030;
     width: 100%;
     padding-top: 40px;
-    height: 200px;
+    height: 275px;
     }
     .logo_2 img{
     width: 25%;
@@ -196,20 +207,21 @@ h2{
         }
     }
     .select{
-    display: inline-flex;
     background-color: white;
     margin-left: 4%;
-    border-radius: 30px;
+    border-radius: 15px;
         p {
         margin-left: 10px;
+        
         }
         h3{
         margin-left: 10px;
         }
     }
     .prix{
-        margin-top: 42px;
-        margin-left: 5%;
+        position: absolute;
+        margin-left: 80%;
+        margin-top: -48px;
     }  
     .page_menu{
     background-color: #F2F2F2;
@@ -220,7 +232,7 @@ h2{
     display: inline-flex;
     flex-direction: column;
     width: 95%;
-    gap: 50px;
+    gap: 30px;
         h2{
             border-bottom: rgb(61, 230, 215) solid;
             width: 60px;
@@ -230,23 +242,22 @@ h2{
     display: inline-flex;
     flex-direction: column;
     width: 95%;
-    gap: 50px;
-    h2{
+    gap: 30px;
+        h2{
         border-bottom: rgb(61, 230, 215) solid;
         width: 60px;
     }
-
-    }
+}
     .part_3{
     display: inline-flex;
     flex-direction: column;
     width: 95%;
-    gap: 50px;
+    gap: 30px;
     h2{
         border-bottom: rgb(61, 230, 215) solid;
         width: 60px;
     }
-    }
+}
     .bouton_2{
     background-color:#FF79DA ;
     border-radius: 50px;
@@ -257,7 +268,26 @@ h2{
     margin-bottom: 75px;
     color: white;
         p {
-            margin-left: 30%;
+            margin-left: 25%;
+            padding-top: 15px;
         } 
+    } 
+@media only screen and (max-width: 992px) and (min-width: 768px){
+    .btn_1{
+        width: 30%;
+        height: 50px;
+        margin-left: 35%;
+    }
+    .logo img{
         
-    }          
+    }
+    
+    
+    .bouton_2{
+        width: 30%;
+        margin-left: 35%;
+    }
+
+
+
+}          
