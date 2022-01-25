@@ -228,6 +228,7 @@ h2 {
 }
 
 .select {
+  display: inline-flex;
   background-color: white;
   margin-left: 4%;
   border-radius: 15px;
@@ -239,10 +240,32 @@ h2 {
   margin-left: 10px;
 }
 
+.transition {
+  width: 80px;
+  height: 80px;
+  background-color: #3de6d7;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.transition i {
+  color: white;
+}
+
+.select {
+  animation: slidein 4s;
+  animation-delay: 0.5s;
+}
+
+@keyframes slidein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .prix {
-  position: absolute;
-  margin-left: 80%;
-  margin-top: -48px;
+  margin-top: 10px;
 }
 
 .page_menu {
@@ -309,6 +332,17 @@ h2 {
   .bouton_2 {
     width: 30%;
     margin-left: 35%;
+  }
+
+  .select {
+    display: inline-flex;
+    justify-content: space-between;
+  }
+}
+@media only screen and (min-width: 993px) {
+  .select {
+    display: inline-flex;
+    justify-content: space-between;
   }
 }
 
