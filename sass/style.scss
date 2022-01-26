@@ -200,6 +200,7 @@ h2{
         h1{
         margin-left: 5%;
         margin-top: 40px;
+        font-style: italic;
         }
         i {
             float: right;
@@ -208,24 +209,33 @@ h2{
     }
     .select{
     display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
     background-color: white;
-    margin-left: 4%;
+    margin-left: 2%;
+    margin-right: 2%;
     border-radius: 15px;
         p{
         margin-left: 10px;
+        font-size: small;
         }
         h3{
         margin-left: 10px;
+        font-size: medium;
         }
     }
     .transition{
-        width: 80px;
+        width: 20%;
         height: 80px;
         background-color: rgb(61, 230, 215);
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
         i {
            color: white;
+           padding-left: 32%;
+           padding-top: 28px;
+           font-size: x-large;
+           
         }
     }
     .select{
@@ -240,8 +250,12 @@ h2{
         opacity:1;
     }
 }
+    .texte{
+        width: 75%;
+    }
     .prix{
-        margin-top: 10px;
+        margin-top: 38px;
+        margin-right: 1%;
     }  
     .page_menu{
     background-color: #F2F2F2;
@@ -251,31 +265,34 @@ h2{
     .part_1{
     display: inline-flex;
     flex-direction: column;
-    width: 95%;
-    gap: 30px;
+    width: 96%;
+    gap: 20px;
         h2{
             border-bottom: rgb(61, 230, 215) solid;
             width: 60px;
+            margin-bottom: -10px;
         }
     }
     .part_2{
     display: inline-flex;
     flex-direction: column;
-    width: 95%;
-    gap: 30px;
+    width: 96%;
+    gap: 20px;
         h2{
         border-bottom: rgb(61, 230, 215) solid;
         width: 60px;
+        margin-bottom: -10px;
+        }
     }
-}
     .part_3{
     display: inline-flex;
     flex-direction: column;
-    width: 95%;
-    gap: 30px;
-    h2{
+    width: 96%;
+    gap: 20px;
+        h2{
         border-bottom: rgb(61, 230, 215) solid;
         width: 60px;
+        margin-bottom: -10px;
     }
 }
     .bouton_2{
