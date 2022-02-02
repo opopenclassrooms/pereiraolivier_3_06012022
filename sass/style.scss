@@ -144,10 +144,17 @@ h2{
         margin-left: 5%;
         }
     }
-   .symb:hover{
-        margin-right: 5%;
+    .symb{
+        margin-right: 3%;
+        font-size: xx-large;
+
+        }
+    
+    .symb:hover{
+        margin-right: 7%;
         .fas{
-            color: rgb(192, 83, 219);
+        color: rgb(192, 83, 219);
+        font-size: xx-large;
         }
         .far{
             display:none
