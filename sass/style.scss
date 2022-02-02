@@ -144,37 +144,10 @@ h2{
         margin-left: 5%;
         }
     }
-    .restaurant__heart {
-        position: relative;
-        display: flex;
-        cursor: pointer;
-        margin: 22px 25px 0 0;
-      }
-      .restaurant__heart:hover .full {
-        transform: scale(1.05);
-        opacity: 1;
-      }
-      .restaurant__heart:hover .empty {
-        animation: stroke_off 1s forwards;
-      }
-      .restaurant .full {
-        opacity: 0;
-        transform-origin: 50% 10%;
-        transform: scale(0);
-        transition: all 1s ease-in-out;
-      }
-      .restaurant__heart_empty {
-        position: absolute;
-        top: -1px;
-        left: -1px;
-      }
-    .symb:hover{
+   .symb:hover{
         margin-right: 5%;
-        
-    
         .fas{
             color: rgb(192, 83, 219);
-
         }
         .far{
             display:none
@@ -261,8 +234,8 @@ h2{
     justify-content: space-between;
     width: 100%;
     background-color: white;
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-left: 3%;
+    margin-right: 3%;
     border-radius: 15px;
     cursor: pointer;
         p{
@@ -278,9 +251,9 @@ h2{
         width: 20%;
         transition-duration: 1s;
         .circle{
-            justify-content: center;
             transform: rotate(360deg);
-            transition-duration: 0.5s;
+            transition-duration: 1s;
+        
         }
         i{
         display: inherit;
@@ -298,6 +271,17 @@ h2{
         border-bottom-right-radius: 15px;
         i {
         display: none;
+        }
+    }
+    .select {
+    animation: fadein 2s;
+    }
+    @keyframes fadein {
+        from {
+            opacity:0;
+        }
+        to {
+            opacity:1;
         }
     }
     .texte{
