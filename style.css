@@ -54,7 +54,7 @@ h2 {
   margin-left: 20%;
   color: white;
   margin-top: 15px;
-  background: linear-gradient(to bottom right, #f3aafd, #c053db);
+  background: linear-gradient(to bottom right, #f3aafd, #530d64);
 }
 .btn_1 p {
   text-align: center;
@@ -84,7 +84,7 @@ h2 {
   color: grey;
 }
 .nav1 .rond, .nav2 .rond {
-  background-color: #c053db;
+  background-color: #a258b4;
   color: white;
   padding: 6px;
   padding-left: 10px;
@@ -109,8 +109,8 @@ h2 {
   position: absolute;
   background-color: #a5f8dc;
   width: 80px;
-  margin-bottom: 200px;
-  margin-left: 240px;
+  margin-bottom: 58%;
+  margin-left: 78%;
   color: green;
   border-radius: 5px;
 }
@@ -120,6 +120,7 @@ h2 {
 }
 
 .cards {
+  position: relative;
   display: inline-flex;
   flex-direction: column;
   justify-content: center;
@@ -153,6 +154,35 @@ h2 {
 }
 .cards p {
   margin-left: 5%;
+}
+
+.restaurant__heart {
+  position: relative;
+  display: flex;
+  cursor: pointer;
+  margin: 22px 25px 0 0;
+}
+
+.restaurant__heart:hover .full {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+.restaurant__heart:hover .empty {
+  animation: stroke_off 1s forwards;
+}
+
+.restaurant .full {
+  opacity: 0;
+  transform-origin: 50% 10%;
+  transform: scale(0);
+  transition: all 1s ease-in-out;
+}
+
+.restaurant__heart_empty {
+  position: absolute;
+  top: -1px;
+  left: -1px;
 }
 
 .symb:hover {
@@ -245,6 +275,11 @@ h2 {
   margin-right: 10%;
 }
 
+.animation {
+  display: inline-flex;
+  width: 100%;
+}
+
 .select {
   display: inline-flex;
   justify-content: space-between;
@@ -253,6 +288,7 @@ h2 {
   margin-left: 2%;
   margin-right: 2%;
   border-radius: 15px;
+  cursor: pointer;
 }
 .select p {
   margin-left: 10px;
@@ -263,40 +299,41 @@ h2 {
   font-size: medium;
 }
 
-.transition {
+.select :hover + .transition {
   width: 20%;
+  transition-duration: 1s;
+}
+.select :hover + .transition .circle {
+  justify-content: center;
+  transform: rotate(360deg);
+  transition-duration: 0.5s;
+}
+.select :hover + .transition i {
+  display: inherit;
+  margin-left: 35%;
+  margin-top: 30px;
+  font-size: x-large;
+  color: white;
+}
+
+.transition {
+  width: 0%;
   height: 80px;
   background-color: #3de6d7;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
 }
 .transition i {
-  color: white;
-  padding-left: 32%;
-  padding-top: 28px;
-  font-size: x-large;
+  display: none;
 }
 
-.select {
-  animation: slidein 4s;
-  animation-delay: 0.5s;
-}
-
-@keyframes slidein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 .texte {
   width: 75%;
 }
 
 .prix {
   margin-top: 38px;
-  margin-right: 1%;
+  margin-left: 12%;
 }
 
 .page_menu {
@@ -352,7 +389,7 @@ h2 {
   color: white;
 }
 .bouton_2 p {
-  margin-left: 25%;
+  margin-left: 28%;
   padding-top: 15px;
 }
 

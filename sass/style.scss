@@ -9,6 +9,7 @@ h2{
     width: 50%;
     margin-left: 25%;
     padding-top: 30px;
+    
     }
 .lieux{
     display: inline-flex;
@@ -19,6 +20,7 @@ h2{
     width: 100%;
     margin-top: 15px;
     font-size: 16px;
+    
 }
 .font{
     background-color: #F2F2F2;
@@ -47,7 +49,7 @@ h2{
     margin-left: 20%;
     color: white;
     margin-top: 15px;
-    background: linear-gradient(to bottom right, rgb(243, 170, 253), rgb(192, 83, 219));
+    background: linear-gradient(to bottom right, rgb(243, 170, 253), rgb(83, 13, 100));
         p{
         text-align: center;
         padding-top: 15px;
@@ -75,7 +77,7 @@ h2{
             color: grey;
         }
     .rond {
-        background-color:rgb(192, 83, 219) ;
+        background-color: rgb(162, 88, 180) ;
         color: white ;
         padding: 6px;
         padding-left: 10px;
@@ -99,8 +101,8 @@ h2{
         position: absolute;
         background-color: rgb(165, 248, 220);
         width: 80px;
-        margin-bottom: 200px;
-        margin-left: 240px;
+        margin-bottom: 58%;
+        margin-left: 78%;
         color: green;
         border-radius: 5px;
         p{
@@ -109,6 +111,7 @@ h2{
         }
     }
 .cards{
+    position: relative;
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
@@ -141,6 +144,30 @@ h2{
         margin-left: 5%;
         }
     }
+    .restaurant__heart {
+        position: relative;
+        display: flex;
+        cursor: pointer;
+        margin: 22px 25px 0 0;
+      }
+      .restaurant__heart:hover .full {
+        transform: scale(1.05);
+        opacity: 1;
+      }
+      .restaurant__heart:hover .empty {
+        animation: stroke_off 1s forwards;
+      }
+      .restaurant .full {
+        opacity: 0;
+        transform-origin: 50% 10%;
+        transform: scale(0);
+        transition: all 1s ease-in-out;
+      }
+      .restaurant__heart_empty {
+        position: absolute;
+        top: -1px;
+        left: -1px;
+      }
     .symb:hover{
         margin-right: 5%;
         
@@ -225,6 +252,10 @@ h2{
             margin-right: 10%;
         }
     }
+    .animation{
+        display: inline-flex;
+        width: 100%;
+    }
     .select{
     display: inline-flex;
     justify-content: space-between;
@@ -233,6 +264,7 @@ h2{
     margin-left: 2%;
     margin-right: 2%;
     border-radius: 15px;
+    cursor: pointer;
         p{
         margin-left: 10px;
         font-size: small;
@@ -242,38 +274,39 @@ h2{
         font-size: medium;
         }
     }
-    .transition{
+    .select :hover + .transition{
         width: 20%;
+        transition-duration: 1s;
+        .circle{
+            justify-content: center;
+            transform: rotate(360deg);
+            transition-duration: 0.5s;
+        }
+        i{
+        display: inherit;
+        margin-left: 35%;
+        margin-top: 30px;
+        font-size: x-large;
+        color: white;
+        }
+    }
+    .transition{
+        width: 0%;
         height: 80px;
         background-color: rgb(61, 230, 215);
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
         i {
-           color: white;
-           padding-left: 32%;
-           padding-top: 28px;
-           font-size: x-large;
-           
+        display: none;
         }
     }
-    .select{
-        animation: slidein 4s;
-        animation-delay: 0.5s;
-    }
-@keyframes slidein {
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
     .texte{
         width: 75%;
     }
     .prix{
         margin-top: 38px;
-        margin-right: 1%;
+        margin-left: 12%;
+        
     }  
     .page_menu{
     background-color: #F2F2F2;
@@ -323,7 +356,7 @@ h2{
     margin-bottom: 75px;
     color: white;
         p {
-            margin-left: 25%;
+            margin-left: 28%;
             padding-top: 15px;
         } 
     } 
