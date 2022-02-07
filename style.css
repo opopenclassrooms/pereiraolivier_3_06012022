@@ -229,6 +229,17 @@ h2 {
 .page i {
   margin-left: 100%;
 }
+.page nav {
+  padding: 10px;
+}
+
+.retour {
+  margin-top: 22px;
+}
+.retour i {
+  font-size: large;
+  text-decoration: none;
+}
 
 .cards_2 {
   display: inline-flex;
@@ -252,6 +263,8 @@ h2 {
   margin-left: 5%;
   margin-top: 40px;
   font-style: italic;
+  font-family: didot, serif;
+  font-size: xx-large;
 }
 .content_2 i {
   float: right;
@@ -346,6 +359,7 @@ h2 {
   border-bottom: #3de6d7 solid;
   width: 60px;
   margin-bottom: -10px;
+  font-weight: 100;
 }
 
 .part_2 {
@@ -358,6 +372,7 @@ h2 {
   border-bottom: #3de6d7 solid;
   width: 60px;
   margin-bottom: -10px;
+  font-weight: 100;
 }
 
 .part_3 {
@@ -370,10 +385,11 @@ h2 {
   border-bottom: #3de6d7 solid;
   width: 60px;
   margin-bottom: -10px;
+  font-weight: 100;
 }
 
 .bouton_2 {
-  background-color: #FF79DA;
+  background: linear-gradient(to bottom right, #f3aafd, #530d64);
   border-radius: 50px;
   width: 50%;
   height: 50px;
@@ -383,7 +399,7 @@ h2 {
   color: white;
 }
 .bouton_2 p {
-  margin-left: 28%;
+  margin-left: 30%;
   padding-top: 15px;
 }
 

@@ -20,8 +20,7 @@ h2{
     width: 100%;
     margin-top: 15px;
     font-size: 16px;
-    
-}
+    }
 .font{
     background-color: #F2F2F2;
     padding-top: 10px;
@@ -42,7 +41,6 @@ h2{
     padding-top: 15px;
 }
 .btn_1{
-    
     border-radius: 50px;
     width: 60%;
     height: 50px;
@@ -53,7 +51,6 @@ h2{
         p{
         text-align: center;
         padding-top: 15px;
-    
     }
 }
 .bloc_nav{
@@ -208,7 +205,18 @@ h2{
         align-items: center;
         i {
             margin-left: 100%;
+        }
+        nav{
+            padding: 10px;
         }    
+    }
+    .retour{
+        margin-top: 22px;
+        i{
+        font-size: large;
+        text-decoration: none;
+        }
+
     }
     .cards_2{
     display: inline-flex;
@@ -230,6 +238,8 @@ h2{
         margin-left: 5%;
         margin-top: 40px;
         font-style: italic;
+        font-family: didot, serif;
+        font-size: xx-large;
         }
         i {
             float: right;
@@ -264,8 +274,7 @@ h2{
         .circle{
             transform: rotate(360deg);
             transition-duration: 1s;
-        
-        }
+            }
         i{
         display: inherit;
         margin-left: 35%;
@@ -301,7 +310,6 @@ h2{
     .prix{
         margin-top: 38px;
         margin-left: 12%;
-        
     }  
     .page_menu{
     background-color: #F2F2F2;
@@ -317,6 +325,7 @@ h2{
             border-bottom: rgb(61, 230, 215) solid;
             width: 60px;
             margin-bottom: -10px;
+            font-weight: 100;
         }
     }
     .part_2{
@@ -328,6 +337,7 @@ h2{
         border-bottom: rgb(61, 230, 215) solid;
         width: 60px;
         margin-bottom: -10px;
+        font-weight: 100;
         }
     }
     .part_3{
@@ -339,10 +349,11 @@ h2{
         border-bottom: rgb(61, 230, 215) solid;
         width: 60px;
         margin-bottom: -10px;
+        font-weight: 100;
     }
 }
     .bouton_2{
-    background-color:#FF79DA ;
+    background: linear-gradient(to bottom right, rgb(243, 170, 253), rgb(83, 13, 100));
     border-radius: 50px;
     width: 50%;
     height: 50px;
@@ -351,7 +362,7 @@ h2{
     margin-bottom: 75px;
     color: white;
         p {
-            margin-left: 28%;
+            margin-left: 30%;
             padding-top: 15px;
         } 
     } 
